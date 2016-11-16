@@ -498,7 +498,7 @@ footer .bottom {
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Bootstrap's Col-MD lines up with 992px so when Bootstrap changes the columns for tablet and smaller screens, lets change the content.  */
-@media (max-width: 991px) {
+@media (max-width: 1030px) {
     /* Change some of our custom stuff to accomodate tablet size screens */
   h2 { font-size: 150%; line-height: 1.5em; }
   
@@ -561,11 +561,16 @@ footer .bottom {
 		margin: 0px;
 	}
 	
-	 
+
+   .calendar, .footer, .about { background-attachment: scroll; }
+  
+    
     
   .patch-l, .patch-r { display: none; }
   .collage div { height: 120px; }  
+    
   .members { display: none; }
+    
   .previous-events { display: none; } 
     .community { height: 100%; color: #333; } 
     .community span.glyphicon { font-size: 8em; text-shadow: 2px 1px 2px gray;  }
