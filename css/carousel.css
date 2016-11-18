@@ -409,8 +409,8 @@ footer .bottom {
 .members li { display: inline-block; width: 30%; margin: 30px 20px; }
 .members ul  img { width: auto; ; height: 100px; }
 
-.patch-r { position: relative; left: 125px; top: 60px; }
-.patch-l { position: relative; left: -90px; top: 60px; }
+.patch-r { position: relative; left: 10px; top: 60px; float: right; width: 100px;}
+.patch-l { position: relative; left: -85px; top: 60px; float: left; width: 100px; }
 
 
 .join { color: #333; font-size: 150%; background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)); z-index: 9999; padding-bottom: 20px; overflow-x: hidden; }
