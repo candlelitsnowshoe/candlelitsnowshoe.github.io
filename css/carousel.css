@@ -583,8 +583,7 @@ footer .bottom {
         width: auto;  text-align: center;
     }
         
-    .community p { color: dimgray; }
-    .community .container .row div:last-of-type p  { color: white; font-weight: 700; }
+  
       
     .events { display: none;  }      
     
@@ -616,6 +615,20 @@ footer .bottom {
         
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                                            RESPONSIVE CSS - PHONES AND SMALL TABLETS
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Bootstrap's Col-MD lines up with 992px so when Bootstrap changes the columns for tablet and smaller screens, lets change the content.  */
+@media (max-width: 992px) {
+    
+      .community p { color: dimgray; }
+    .community .container .row div:last-of-type p  { color: white; font-weight: 700; }
+}
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -641,6 +654,8 @@ footer .bottom {
     .item:nth-child(2) img { height: 350px; }  /* Special rule to make the bowling image fill the container space correctly */
     
     .section-about { left: 0%;  top: 70px; }
+    
+    
     
     
     /* Hide a quarter of the pictures and crank up the image size so the end result is a 3x3 grid of images */
