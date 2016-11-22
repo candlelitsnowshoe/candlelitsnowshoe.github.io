@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Niagara Area Business Assocation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+   
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      
+    <!-- fonts -->    
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Nothing+You+Could+Do" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->     
+    <link href="./css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    
+	<header>
+		<div id="header">
+			<div class="container">
+				<div class="logo">				
+					<a href="index.html"> 
+						<img class="brand-image" src="./img/NABAlogo.png" alt="Niagara Area Business Association Brand Image" /> 							
+					</a>
+					<span class="header-title">Niagara Area Business Association</span>
+				</div>		
+								
+				<div id="nav-list">	
+					<div class="dropdown">
+                        <a href="javascript:void(0);" class="mobile-menu-icon" onclick="showMenu()" >
+                            <svg width="30" height="50">
+                                <path d="M0,4 50,4" stroke="#eee" stroke-width="3"/>
+                                <path d="M0,14 50,14" stroke="#eee" stroke-width="3"/>
+                                <path d="M0,24 50,24" stroke="#eee" stroke-width="3"/>
+                            </svg>
+                        </a>
+
+                        <!-- Mobile Navigation Menu, hidden offscreen until the menu icon is clicked -->
+                        <div id="pullOutMenu" class="mobile-menu">
+                            <nav>				
+                                <ul>							
+                                    <li class="current" title="Current Events"> <a href="#"> Highlights </a> </li>
+                                    <li title="Calendar"> <a href="#calendar"> Calendar </a> </li>
+                                    <li title="Members"> <a href="#members"> Members </a> </li>
+                                    <li title="Contact"> <a href="#contact"> Contact </a> </li>									
+                                </ul>
+                            </nav>
+                        </div>	                        
+                    </div>
+                    
+					<nav class="nav">				
+						<ul>							
+							<li class="current" title="Current Events"> <a href="#" onclick="updateNav(0)"> Highlights </a> </li>
+							<li title="Calendar"> <a href="#calendar" onclick="updateNav(1)"> Calendar </a> </li>
+							<li title="Members"> <a href="#members" onclick="updateNav(2)"> Members </a> </li>
+							<li title="Contact"> <a href="#contact" onclick="updateNav(3)"> Contact </a> </li>									
+						</ul>
+					</nav>
+				</div>				
+			</div>
+		</div>
+	</header><!-- header -->
+     
+      <style>          
+          .accomplishments_page { height: 350px; background: url(images/bench.png); z-index: 9999; box-shadow: 1px 1px 10px black;  }
+          .accomplishments_page h2 { position: relative; top: 150px; border: none;  width: 100%; font-size: 300%;}
+          .accomplishments_about { padding-bottom: 40px; }
+          .accomplishment { margin: 40px; ; padding: 10px; border: 10px slid white; box-shadow: 2px 2px 10px #444; }
+          .accomplishment h4 { color: orange; }
+          .accomplishment img { height: 200px; width: 259px;  }
+          
+      </style>
+      
+      
+     <!-- ------------------------------------------------------------------------------
+                                       EVENTS  SECTION
+     ------------------------------------------------------------------------------- -->     
+     <div class="accomplishments_page">            
+        <div class="container-fluid text-center">            						
+				<div class="col-md-12 upcoming-events">                  
+                  <h2> Ways we are helping the community </h2>  				 
+                </div>  
+          </div>
+      </div>    
+  
+    
+      <!-- ------------------------------------------------------------------------------
+                                        ACCOMPLISHMENTS  SECTION    
+    ------------------------------------------------------------------------------- --> 
+    <div class="accomplishments_about">
+        <div class="container">   
+           
+          <!-- Fill the Bus 2016 --> 
+          <div class="accomplishment row">
+            <div class="col-md-6 text-justify">          
+              <h3>Fill the Bus</h3>
+              <h4> October 2016 </h4>
+              <p> The annual Fall Fill the bus where Niagara Area Businesses and the School collected food for for Karens food pantry.  Karen's food panty helps to supply food locally to those in need.  </p> 
+             </div>
+              <div class="col-md-6" style="display: inline-block; text-align: right; "> 
+              <img src="images/accomplishments/fill_the_bus_2016.PNG"/>
+            </div>            
+          </div><!-- /.row -->
+          
+            
+          <!-- Fill the Trail Signs --> 
+          <div class="accomplishment row">
+               <div class="col-md-6"> 
+              <img src="images/accomplishments/riverside_trail_signs.PNG"/>
+            </div>   
+            <div class="col-md-6 text-justify">          
+              <h3>Riverside Trail Signs</h3>
+              <h4> August 2016 </h4>
+              <p> We have a beautiful set of hiking, biking, and ski trails known as the Riverside Trails in Niagara.  Some of the proceeds from the 2016 Ski/Snowshoe event went to signs to raise awareness of this community gem.  
+              </p> 
+             </div>                      
+          </div><!-- /.row -->
+            
+            
+         <!-- Decorating the Gazebo --> 
+          <div class="accomplishment row">
+            <div class="col-md-6 text-justify">          
+              <h3>Decorating the Gazebo</h3>
+              <h4> May 2016 </h4>
+              <p> Thanks to NABA members Juli and husband Jim for decorating the Gazebo in preparation for the summer.  It looks fantastic!
+              </p> 
+             </div>
+              <div class="col-md-6" style="display: inline-block; text-align: right; "> 
+                <img src="images/accomplishments/gazebo_summer.PNG"/>
+            </div>            
+          </div><!-- /.row -->
+            
+            
+          <!-- Scholarship! --> 
+          <div class="accomplishment row">
+               <div class="col-md-6"> 
+              <img src="images/accomplishments/NABAlogo.jpg"/>
+            </div>   
+            <div class="col-md-6 text-justify">          
+              <h3>Niagara School Scholarship</h3>
+              <h4> April 2016 </h4>
+              <p> The Niagara Area Business Assocation donated $500 for a scholarship for seniors at the Niagara High School.  Some of the proceeds from the 2016 Ski/Snowshoe event were set aside for this cause.  
+              </p> 
+             </div>                      
+          </div><!-- /.row -->
+            
+            
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-md-12" >          
+                 <a class="btn btn-lg btn-success" href="index.html" role="button">  <span class="glyphicon glyphicon-menu-left"></span> Home </a>            
+            </div>            
+          </div><!-- /.row -->
+            
+        </div> 
+    </div>      
+  
+  
+   
+      
+     <!-- ------------------------------------------------------------------------------
+                                       IMAGE COLLAGE  SECTION
+     ------------------------------------------------------------------------------- -->                
+      <div class="container-fluid">
+            <div class="row">                 
+                <div class="collage">       
+                    <div> <img src="./img/collage/BalloonRelease2014.jpg"/>  </div>
+                    <div> <img src="./img/collage/OurTown2014.JPG"/>    </div>   
+                    <div> <img src="./img/collage/gazebo2.jpg"/>    </div>                    
+                    <div> <img src="./img/collage/FillTheBus2.jpg"/>     </div>
+                    <div> <img src="./img/collage/gazebo.jpg"/>    </div>                                     
+                    <div> <img src="./img/collage/ShopLocalWinner.jpg"/>     </div>
+                    
+                    <div> <img src="./img/collage/winterevent_ad.jpg"/>     </div>                    
+                    <div> <img src="./img/collage/Scholarship2014.jpg"/>    </div>                    
+                    <div> <img src="./img/collage/walkrun.jpg"/>   </div>
+                    <div> <img src="./img/collage/FillTheBus.jpg"/>     </div>
+                    <div> <img src="./img/collage/skisnowshoe2016b.jpg"/>    </div>
+                    <div> <img src="./img/collage/ShopLocalWinner2.jpg"/>    </div>
+                    
+                </div> 
+              </div>
+          </div>
+      
+    <!-- ------------------------------------------------------------------------------
+                                       FOOTER 
+    ------------------------------------------------------------------------------- -->    
+    <a id="contact"></a>	
+    <footer class="footer">
+      <div class="container">
+	     <div class="row">
+			 <div class="col-md-12">
+				   <h2>Looking for more?</h2>
+			 </div>
+			 
+			 <div class="col-md-6 col-md-offset-3">			   
+			   <p> If your business would like to host a meeting, you are interested in joining, or you have questions or feedback, you can connect with us as follows </p>
+			 </div>
+		 </div>
+		 
+		    
+		 <div class="row contact">
+			 <div class="col-sm-4">  
+				<span class="glyphicon glyphicon glyphicon-envelope"></span> 
+				<p> naba@niagarawi.biz</p>                 
+			  </div>                  
+
+			 <div class="col-sm-4">   
+				<span class="glyphicon glyphicon glyphicon-send"></span> 
+				<ol class="address">
+					<li> NABA </li>
+					<li> PO BOX 252 </li> 
+					<li> Niagara, WI 54151</li>
+				</ol>
+			 </div>
+
+			 <div class="col-sm-4">  
+				 <span class="glyphicon glyphicon glyphicon-share"></span> 
+				 <p> Find us on Facebook! </p>
+			 </div>
+		 </div>		
+          
+      </div>
+      <div class="bottom">NIAGARA AREA BUSINESS ASSOCATION </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+    <script src="./js/bootstrap.min.js"></script>   
+    
+    <!-- Custom Javascript -->
+    <script src="./js/naba.js"></script>  
+      
+      
+  </body>
+</html>
