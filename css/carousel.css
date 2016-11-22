@@ -362,6 +362,8 @@ footer .bottom {
     line-height: 225px; 
 }
 
+
+
 .calendar {
     background-color: beige; 
 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)), url('../img/leaves.jpg'); 
@@ -486,6 +488,47 @@ footer .bottom {
 .collage { width: 100%; padding: 0px; margin: 0px; border-top: 2px solid white; box-shadow: 0px -2px 6px 1px #444; z-index: 9999;  }
 .collage div { width: 16.666666667%; height: 160px; float: left;  }
 .collage img { width: 100%; height: 100%;  }
+
+
+
+
+
+/* INDIVIDUAL EVENT PAGE
+-------------------------------------------------- */
+.event_about { 
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)), url('../images/events/event_bowling_alley.PNG'); 
+  padding-bottom: 40px;  font-size: 200%;
+}
+.event_about h3 { color: #606dbc; text-shadow: 0px 0px 10px white, 2px 2px 4px black; font-size: 200%; }
+.event_about span { font-weight: 700; color: darkorange; font-size: 110%; padding-right: 20px; }
+.event_about a { margin-top: 30px; font-weight: 700; }
+.event_about .glyphicon { color: white; font-size: 110%; left: 10px; top: 4px;}
+.event_about img { width: 60%; height: auto; border: 10px solid white; box-shadow: 1px 2px 10px #444; margin-top: 40px; }
+
+.events_big { 
+    position: relative; 
+    overflow-x: hidden; 
+    background:  repeating-linear-gradient(
+                  45deg,
+                  #606dbc,
+                  #606dbc 10px,
+                  #465298 10px,
+                  #465298 20px
+    );
+    background-size: cover; 
+
+    border-top: 0px solid white; 
+    border-bottom: 20px solid white;
+    box-shadow: 1px 1px 10px black; 
+
+    z-index: 999;	 
+    height: 600px; 	
+}
+
+.events_big h2 { margin-top: 175px; border: 0px solid white; line-height: 2em; font-size: 4em; text-shadow: 4px 4px 3px gray; width: 100%;  transform:  skew(-35deg, 0); }
+.events_big p { font-size: 5em; text-style: uppercase; font-weight: 700; 
+        font-family: "lobster"; color: orange; text-shadow: 1px 1px 1px yellow, 1px 1px 6px black; letter-spacing: 6px; 
+}	
 
 
 
@@ -656,7 +699,10 @@ footer .bottom {
     .section-about { left: 0%;  top: 70px; }
     
     
-    
+    .event_about { font-size: 150%; }
+    .event_about img { width: 100%; height: auto; border: 10px solid white; box-shadow: 1px 2px 10px #444; margin-top: 40px; }
+    .events_big { height: 400px; font-size: 60%; }
+    .events_big h2 {  margin-top: 90px; }
     
     /* Hide a quarter of the pictures and crank up the image size so the end result is a 3x3 grid of images */
     .collage div:nth-child(4n) { display: none; }
@@ -697,7 +743,12 @@ footer .bottom {
     .brand-image { margin-left: 33%; top: -20%; }
     .header-title { display: none; }
     .section-about { width: 350px; }    
-    #header .logo { width: 100%; }    
+    #header .logo { width: 100%; }   
+        
+    .event_about { font-size: 110%; }
+    .event_about span { padding-right: 5px; }    
+    .events_big { height: 400px; font-size: 60%; }
+    .events_big h2 {  margin-top: 90px; }
 }
 
 
