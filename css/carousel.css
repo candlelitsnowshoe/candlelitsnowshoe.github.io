@@ -366,7 +366,7 @@ footer .bottom {
 
 .calendar {
     background-color: beige; 
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)), url('../img/leaves.jpg'); 
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)), url('../images/leaves.jpg'); 
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -405,11 +405,12 @@ footer .bottom {
 	background-attachment: fixed;
     background-size: cover; 
     color: white; 
-    border-top: 1px solid #ccc;     
+    border-top: 1px solid #ccc;    
 }
 .members ul { width: 100%; list-style: none; }
 .members li { display: inline-block; width: 30%; margin: 30px 20px; }
-.members ul  img { width: auto; ; height: 100px; }
+.members li span { font-family: 'Open Sans'; font-size: 2em; text-shadow: 2px 2px 5px #444; text-transform: uppercase;  font-weight: 700;}
+.members ul  img { width: auto;  min-width: 180px; max-width: 300px; height: 140px; background-color: white; box-shadow: 2px 2px 5px #444; padding: 5px }
 
 .patch-r { position: relative; left: 10px; top: 60px; float: right; width: 100px;}
 .patch-l { position: relative; left: -85px; top: 60px; float: left; width: 100px; }
@@ -495,7 +496,7 @@ footer .bottom {
 
 /* INDIVIDUAL EVENT PAGE
 -------------------------------------------------- */
-.event_about { 
+.event_bowling { 
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)), url('../images/events/event_bowling_alley.PNG'); 
   padding-bottom: 40px;  font-size: 200%;
 }
@@ -522,13 +523,23 @@ footer .bottom {
     box-shadow: 1px 1px 10px black; 
 
     z-index: 999;	 
-    height: 600px; 	
+    height: 620px; 	
 }
 
 .events_big h2 { margin-top: 175px; border: 0px solid white; line-height: 2em; font-size: 4em; text-shadow: 4px 4px 3px gray; width: 100%;  transform:  skew(-35deg, 0); }
 .events_big p { font-size: 5em; text-style: uppercase; font-weight: 700; 
         font-family: "lobster"; color: orange; text-shadow: 1px 1px 1px yellow, 1px 1px 6px black; letter-spacing: 6px; 
 }	
+
+.ski-snowshoe { background-image: url('../images/events/snow_5.jpg'); }
+.ski-snowshoe p { color: white; text-shadow: 1px 1px 1px black, 1px 1px 5px white;}
+
+.event_ski { 
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url('../images/events/snow_4.jpg'); 
+    background-size: 100% 100%;; 
+    background-repeat: none; 
+    padding-bottom: 40px;  font-size: 200%; 
+}
 
 
 
@@ -669,8 +680,11 @@ footer .bottom {
 /* Bootstrap's Col-MD lines up with 992px so when Bootstrap changes the columns for tablet and smaller screens, lets change the content.  */
 @media (max-width: 992px) {
     
-      .community p { color: dimgray; }
-    .community .container .row div:last-of-type p  { color: white; font-weight: 700; }
+    .community h2 { font-size: 3em; }
+      .community p { font-size: 1.5em;; }
+    /* .community .container .row div:last-of-type p  { color: white; font-weight: 700; }  */
+    
+ 
 }
 
 
@@ -742,14 +756,60 @@ footer .bottom {
     #calendarFilter span.active { 	border-bottom: 2px solid white;  }
     .brand-image { margin-left: 33%; top: -20%; }
     .header-title { display: none; }
-    .section-about { width: 350px; }    
+    .section-about { width: 200px; }    
     #header .logo { width: 100%; }   
         
     .event_about { font-size: 110%; }
     .event_about span { padding-right: 5px; }    
     .events_big { height: 400px; font-size: 60%; }
     .events_big h2 {  margin-top: 90px; }
+    
+      .community h2 { font-size: 1.5em; height: 4em; line-height: 2em; }
+      .community p { font-size: 1.25em;  }
+    
+    #myCarousel { height: 550px; } 
+    footer .bottom { 
+    width: 100%; 
+    height: 4em; 
+    line-height: 4em; 
+    position: absolute; 
+    bottom: 0; 
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)) 
+}
+    
+    .ski-snowshoe  { height: 500px;  }
 }
 
-
+/* Make some adjustments for really small screens */
+@media (max-width: 400px) {   
+    #myCarousel { height: 750px; }    
+    .naba-button { display: none; width: 100%; padding: 0px; margin: 0px; text-align: center; }
+    
+    .collage div:nth-child(2n +3) { display: none; }
+    .collage div { width: 50%; height: 140px; float: left;  }   
+    
+    .calendar h3 { font-size: 1.25em }
+    .event_details { margin-left: 0px; padding-top: 10px; }
+    .event_date { font-size: 1em; margin-top: 10px; } 
+    .event_location { font-size: 1em;  }
+    
+    footer { height: 875px; margin: 0px; padding: 0px; top: 100px; }
+    footer h2 { font-size: 1.20em; }  
+    
+    footer .bottom { 
+        font-size: .65em;
+        width: 100%; 
+        height: 2em; 
+        line-height: 0em; 
+        position: absolute; 
+        bottom: 0;     
+    }   
+    
+    .event_about h3 { font-size: 1.5em; }
+    
+    .ski-snowshoe  { height: 500px;  }
+    .ski-snowshoe h2 { font-size: 3em; }
+    .ski-snowshoe p { font-size: 3em; }
+    
+}
 
