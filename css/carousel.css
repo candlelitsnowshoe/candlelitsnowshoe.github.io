@@ -366,7 +366,7 @@ footer .bottom {
 
 .calendar {
     background-color: beige; 
-	background: linear-gradient(rgba(255, 255, 255, 0.8) 2%, rgba(255, 255, 255, 0.8)), url('../images/leaves.jpg'); 
+	background: linear-gradient(rgba(255, 255, 255, 0.3) 2%, rgba(255, 255, 255, 0.3)), url('../images/leaves.jpg'); 
 	background-size: cover;
 	background-attachment: fixed;
 }
