@@ -366,7 +366,7 @@ footer .bottom {
 
 .calendar {
     background-color: beige; 
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)), url('../images/leaves.jpg'); 
+	background: linear-gradient(rgba(255, 255, 255, 0.8) 2%, rgba(255, 255, 255, 0.8)), url('../images/leaves.jpg'); 
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -491,7 +491,9 @@ footer .bottom {
 .collage img { width: 100%; height: 100%;  }
 
 
-
+/* SPONSOR 
+-------------------------------------------------- */
+.sponsor { width: 30px; height: 30px;  }
 
 
 /* INDIVIDUAL EVENT PAGE
