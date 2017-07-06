@@ -62,7 +62,7 @@
             {
                 // Make the Menu Visible
                 menu.style.opacity = 1;                
-                menu.style.height = '200px';
+                menu.style.height = '250px';
             }
             else
             {
