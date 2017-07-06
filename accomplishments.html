@@ -59,10 +59,11 @@
                         <div id="pullOutMenu" class="mobile-menu">
                             <nav>				
                                 <ul>							
-                                    <li class="current" title="Current Events"> <a href="#"> Highlights </a> </li>
-                                    <li title="Calendar"> <a href="#calendar"> Calendar </a> </li>
-                                    <li title="Members"> <a href="#members"> Members </a> </li>
-                                    <li title="Contact"> <a href="#contact"> Contact </a> </li>									
+                                    <li title="Current Events"> <a href="index.html"> Highlights </a> </li>
+                                    <li class="current" title="Accomplishments"> <a href="#"> Accomplishments </a> </li>
+                                    <li title="Calendar"> <a href="index.html#calendar"> Calendar </a> </li>
+                                    <li title="Members"> <a href="index.html#members"> Members </a> </li>
+                                    <li title="Contact"> <a href="index.html#contact"> Contact </a> </li>									
                                 </ul>
                             </nav>
                         </div>	                        
@@ -70,10 +71,11 @@
                     
 					<nav class="nav">				
 						<ul>							
-							<li class="current" title="Current Events"> <a href="#" onclick="updateNav(0)"> Highlights </a> </li>
-							<li title="Calendar"> <a href="#calendar" onclick="updateNav(1)"> Calendar </a> </li>
-							<li title="Members"> <a href="#members" onclick="updateNav(2)"> Members </a> </li>
-							<li title="Contact"> <a href="#contact" onclick="updateNav(3)"> Contact </a> </li>									
+							<li title="Current Events"> <a href="index.html" onclick="updateNav(0)"> Home </a> </li>	
+							<li class="current" title="Accomplishments"> <a href="#"> Accomplishments </a> </li>
+							<li title="Calendar"> <a href="index.html#calendar" onclick="updateNav(1)"> Events </a> </li>
+							<li title="Members"> <a href="index.html#members" onclick="updateNav(2)"> Members </a> </li>
+							<li title="Contact"> <a href="index.html#contact" onclick="updateNav(3)"> Contact </a> </li>									
 						</ul>
 					</nav>
 				</div>				
@@ -89,6 +91,20 @@
           .accomplishment h4 { color: orange; }
           .accomplishment img { height: 200px; width: 259px;  }
           
+			/* Make some adjustments for really small screens */
+			@media (max-width: 990px) {
+				.accomplishment img { height: 100%; width: 100%;  }
+			}
+			@media (max-width: 600px) {
+				.accomplishment { margin: 5px; }
+				.accomplishment img { height: 100%; width: 100%;  }
+				.accomplishments_page h2 { font-size: 250%; top: 100px;	}				
+			}
+			@media (max-width: 400px) { 
+				.accomplishment { margin: 0px; }
+				.accomplishment img { height: 100%; width: 100%;  }
+				.accomplishments_page h2 { font-size: 225%; top: 75px;  }
+			}
       </style>
       
       
@@ -110,10 +126,46 @@
     <div class="accomplishments_about">
         <div class="container">   
            
-          <!-- Fill the Bus 2016 --> 
+          <!-- 2017 Scholarship --> 
           <div class="accomplishment row">
             <div class="col-md-6 text-justify">          
-              <h3>Fill the Bus</h3>
+              <h3>Helping our future professionals succeed.</h3>
+              <h4> June 2017 </h4>
+              <p> 
+			  The Niagara Area Business Association (NABA) recently awarded Mackenzie McCarthy with a
+$500.00 scholarship to help in her efforts to pursue a degree in psychology with an emphasis on
+substance abuse at the University of Oshkosh.
+			  </p> 
+			  <a href="docs/PressReleases/2017NabaScholarship.pdf" target="blank">Read more here!</a>
+             
+			 </div>
+              <div class="col-md-6" style="display: inline-block; text-align: right; "> 
+              <img src="images/accomplishments/2017_Scholarship.jpg"/>
+            </div>            
+          </div><!-- /.row -->
+		  
+		   <!-- 2017 Ski and Snowshoe Event --> 
+          <div class="accomplishment row">
+               <div class="col-md-6"> 
+              <img src="images/accomplishments/2017_CandleLitSnowshoe.jpg"/>
+            </div>   
+            <div class="col-md-6 text-justify">          
+              <h3>Another Successful Winter Event!</h3>
+              <h4> February 2017 </h4>
+              <p> 
+			  The event featured two lighted loops, over 300 hundred luminaries, a bonfire, hot dogs, hot drinks, even a warming shack with refreshments in the woods. Almost $2,000 were raised to support maintenance of the Niagara Riverside Trails
+as well as supporting the Niagara School System and local community.  Thank you to all the volunteers and to the many participants for making this a great event!
+
+			  
+              </p> 
+			  <a href="docs/PressReleases/2017CandlelitTrails.pdf" target="blank">Read more here!</a>
+             </div>                      
+          </div><!-- /.row -->
+          
+             <!-- Fill the Bus 2016 --> 
+          <div class="accomplishment row">
+            <div class="col-md-6 text-justify">          
+              <h3>Collecting Food for those in need.</h3>
               <h4> October 2016 </h4>
               <p> The annual Fall Fill the bus where Niagara Area Businesses and the School collected food for for Karens food pantry.  Karen's food panty helps to supply food locally to those in need.  </p> 
              </div>
